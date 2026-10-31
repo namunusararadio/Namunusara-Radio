@@ -1,208 +1,744 @@
 <!DOCTYPE html>
 <html lang="si">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<!-- Primary Meta Tags / SEO -->
-<title>නමුණුසර රේඩියෝ | Namunusara Radio - Official Campus Web Radio</title>
-<meta name="title" content="නමුණුසර රේඩියෝ | Namunusara Radio">
-<meta name="description" content="නමුණුසර රේඩියෝ - සවන් සනහන සරසවි ගුවන්විදුලිය. සජීවී ගීත, කතාබහ සහ විනෝදය ඔබේ දුරකථනයටම.">
-<meta name="keywords" content="namunusara radio, namunusara fm, namunusara, නමුණුසර රේඩියෝ, campus radio sri lanka, web radio">
-<meta name="author" content="Namunusara Radio">
-<meta name="robots" content="index, follow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Primary Meta Tags / SEO -->
+  <title>නමුණුසර රේඩියෝ | Namunusara Radio - Official Campus Web Radio</title>
+  <meta name="title" content="නමුණුසර රේඩියෝ | Namunusara Radio">
+  <meta name="description"
+    content="නමුණුසර රේඩියෝ - සවන් සනහන සරසවි ගුවන්විදුලිය. සජීවී ගීත, කතාබහ සහ විනෝදය ඔබේ දුරකථනයටම.">
+  <meta name="keywords"
+    content="namunusara radio, namunusara fm, namunusara, නමුණුසර රේඩියෝ, campus radio sri lanka, web radio">
+  <meta name="author" content="Namunusara Radio">
+  <meta name="robots" content="index, follow">
 
-<!-- Open Graph / WhatsApp & Facebook Preview -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://namunusararadio.github.io/Namunusara-Radio/">
-<meta property="og:title" content="නමුණුසර රේඩියෝ - සවන් සනහන සරසවි ගුවන්විදුලිය">
-<meta property="og:description" content="සරසවි පරිශ්‍රයේ හදගැස්ම ඔබේ දුරකථනයටම. සජීවීව අහන්න!">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;600;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#fffaf3;--ink:#2b2d42;--mute:#6b6f85;--a:#e4572e;--b:#f6a82c;--c:#1b998b;--card:#fff;--line:#f1e4d0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-*{box-sizing:border-box;margin:0}
-body{background:var(--bg);color:var(--ink);font-family:'Noto Sans Sinhala','Iskoola Pota',Poppins,sans-serif;line-height:1.7;overflow-x:hidden}
-nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;display:flex;justify-content:space-between;align-items:center;padding:12px 6vw;background:rgba(255,250,243,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem}
-.logo svg{width:36px;height:36px}
-nav ul{display:flex;gap:22px;list-style:none;padding:0}
-nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;transition:color .2s}
-nav a:hover{color:var(--a)}
-@media(max-width:700px){nav ul{display:none}}
-.hero{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:70px 6vw 90px;min-height:86vh;overflow:hidden}
-@media(max-width:860px){.hero{grid-template-columns:1fr;text-align:center;padding-top:40px}}
-.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.45;z-index:0;animation:drift 14s ease-in-out infinite alternate}
-.b1{width:340px;height:340px;background:var(--b);top:-80px;left:-80px}
-.b2{width:300px;height:300px;background:var(--c);bottom:-60px;right:10%;animation-delay:-5s}
-.b3{width:240px;height:240px;background:var(--a);top:30%;right:-60px;animation-delay:-9s}
-@keyframes drift{to{transform:translate(50px,40px) scale(1.15)}}
-.hero>*:not(.blob){position:relative;z-index:1}
-.live{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:6px 14px;border-radius:99px;font-weight:700;font-size:.85rem;box-shadow:0 4px 14px rgba(0,0,0,.06)}
-.dot{width:10px;height:10px;border-radius:50%;background:var(--a);animation:pulse 1.4s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(228,87,46,.6)}100%{box-shadow:0 0 0 12px rgba(228,87,46,0)}}
-h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:800;line-height:1.2;margin:18px 0 8px;background:linear-gradient(90deg,var(--a),var(--b),var(--c),var(--a));background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 8s linear infinite}
-@keyframes shine{to{background-position:300% 0}}
-.tag{font-size:clamp(1.1rem,2.4vw,1.5rem);font-weight:600;color:var(--ink)}
-.sub{color:var(--mute);margin:14px 0 26px;max-width:520px}
-@media(max-width:860px){.sub{margin-inline:auto}}
-.btn{display:inline-flex;align-items:center;gap:10px;border:0;cursor:pointer;font:inherit;font-weight:700;padding:14px 28px;border-radius:99px;color:#fff;background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 10px 26px rgba(228,87,46,.35);transition:transform .2s,box-shadow .2s}
-.btn:hover{transform:translateY(-3px) scale(1.03)}
-.sheet{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:min(420px,calc(100vw - 32px));z-index:50;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 20px 50px rgba(43,45,66,.28);padding:16px 18px 18px;transform:translateY(30px);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s}
-.sheet.open{transform:none;opacity:1;pointer-events:auto}
-.sheet header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-weight:800}
-.sheet header span{display:inline-flex;align-items:center;gap:8px}
-.sheet button.x{border:0;background:#f3ece0;color:var(--ink);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1rem}
-.sheet .cstrEmbed>a{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-#pstat{color:var(--mute);font-size:.9rem;text-align:center;padding:10px 0}
-.btn.alt{background:#fff;color:var(--ink);box-shadow:0 6px 18px rgba(0,0,0,.08);margin-left:8px}
-.eq{display:flex;gap:4px;align-items:flex-end;height:34px;margin-top:28px}
-@media(max-width:860px){.eq{justify-content:center}}
-.eq i{width:6px;border-radius:4px;background:linear-gradient(var(--a),var(--b));height:30%;animation:bar 1s ease-in-out infinite;animation-play-state:paused}
-.eq i:nth-child(odd){background:linear-gradient(var(--c),#7ee0d3)}
-@keyframes bar{50%{height:100%}}
-.playing .eq i{animation-play-state:running;animation-duration:.6s}
-.playing .disc{animation-duration:2.5s}
-.eq i:nth-child(2){animation-delay:.1s}.eq i:nth-child(3){animation-delay:.25s}.eq i:nth-child(4){animation-delay:.4s}.eq i:nth-child(5){animation-delay:.15s}.eq i:nth-child(6){animation-delay:.35s}.eq i:nth-child(7){animation-delay:.05s}.eq i:nth-child(8){animation-delay:.3s}.eq i:nth-child(9){animation-delay:.2s}.eq i:nth-child(10){animation-delay:.45s}.eq i:nth-child(11){animation-delay:.12s}.eq i:nth-child(12){animation-delay:.28s}
-.art{display:grid;place-items:center;position:relative}
-.art svg{width:min(430px,86vw);height:auto;filter:drop-shadow(0 24px 30px rgba(43,45,66,.18))}
-.disc{transform-origin:140px 230px;animation:spin 6s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.float{animation:fl 5s ease-in-out infinite}
-@keyframes fl{50%{transform:translateY(-14px)}}
-.note{position:absolute;font-size:2rem;color:var(--a);animation:rise 6s linear infinite;opacity:0}
-.note:nth-of-type(2){left:15%;animation-delay:-2s;color:var(--c)}
-.note:nth-of-type(3){right:12%;animation-delay:-4s;color:var(--b)}
-@keyframes rise{0%{transform:translateY(40px) rotate(-10deg);opacity:0}20%{opacity:1}100%{transform:translateY(-220px) rotate(15deg);opacity:0}}
-section{padding:80px 6vw}
-h2{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;text-align:center}
-h2+p{text-align:center;color:var(--mute);margin:6px auto 40px;max-width:560px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;max-width:1100px;margin:auto}
-.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 8px 26px rgba(43,45,66,.06);transition:transform .3s,box-shadow .3s}
-.card:hover{transform:translateY(-8px);box-shadow:0 18px 36px rgba(43,45,66,.12)}
-.ic{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;font-size:1.7rem;margin-bottom:14px;background:linear-gradient(135deg,#ffe9d6,#fff3c9)}
-.card h3{font-size:1.1rem;margin-bottom:4px}.card p{color:var(--mute);font-size:.95rem}
-.contact{background:linear-gradient(135deg,#fff1dc,#e3f7f3);border-radius:40px;max-width:1000px;margin:0 auto;text-align:center;padding:60px 24px}
-.contact p{margin:10px auto 24px;color:var(--mute);max-width:520px;text-align:center}
-footer{text-align:center;padding:36px 6vw 60px;color:var(--mute);font-size:.9rem}
-.rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s}
-.rv.in{opacity:1;transform:none}
-</style>
+  <!-- Open Graph / WhatsApp & Facebook Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://namunusararadio.github.io/Namunusara-Radio/">
+  <meta property="og:title" content="නමුණුසර රේඩියෝ - සවන් සනහන සරසවි ගුවන්විදුලිය">
+  <meta property="og:description" content="සරසවි පරිශ්‍රයේ හදගැස්ම ඔබේ දුරකථනයටම. සජීවීව අහන්න!">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;600;800&family=Poppins:wght@500;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fffaf3;
+      --ink: #2b2d42;
+      --mute: #6b6f85;
+      --a: #e4572e;
+      --b: #f6a82c;
+      --c: #1b998b;
+      --card: #fff;
+      --line: #f1e4d0;
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px)
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Noto Sans Sinhala', 'Iskoola Pota', Poppins, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden
+    }
+
+    nav {
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 6vw;
+      background: rgba(255, 250, 243, .85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line)
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.1rem
+    }
+
+    .logo svg {
+      width: 36px;
+      height: 36px
+    }
+
+    nav ul {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+      padding: 0
+    }
+
+    nav a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .95rem;
+      transition: color .2s
+    }
+
+    nav a:hover {
+      color: var(--a)
+    }
+
+    @media(max-width:700px) {
+      nav ul {
+        display: none
+      }
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 30px;
+      align-items: center;
+      padding: 70px 6vw 90px;
+      min-height: 86vh;
+      overflow: hidden
+    }
+
+    @media(max-width:860px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 40px
+      }
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: .45;
+      z-index: 0;
+      animation: drift 14s ease-in-out infinite alternate
+    }
+
+    .b1 {
+      width: 340px;
+      height: 340px;
+      background: var(--b);
+      top: -80px;
+      left: -80px
+    }
+
+    .b2 {
+      width: 300px;
+      height: 300px;
+      background: var(--c);
+      bottom: -60px;
+      right: 10%;
+      animation-delay: -5s
+    }
+
+    .b3 {
+      width: 240px;
+      height: 240px;
+      background: var(--a);
+      top: 30%;
+      right: -60px;
+      animation-delay: -9s
+    }
+
+    @keyframes drift {
+      to {
+        transform: translate(50px, 40px) scale(1.15)
+      }
+    }
+
+    .hero>*:not(.blob) {
+      position: relative;
+      z-index: 1
+    }
+
+    .live {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border: 1px solid var(--line);
+      padding: 6px 14px;
+      border-radius: 99px;
+      font-weight: 700;
+      font-size: .85rem;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, .06)
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--a);
+      animation: pulse 1.4s infinite
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(228, 87, 46, .6)
+      }
+
+      100% {
+        box-shadow: 0 0 0 12px rgba(228, 87, 46, 0)
+      }
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 4.4rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin: 18px 0 8px;
+      background: linear-gradient(90deg, var(--a), var(--b), var(--c), var(--a));
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: shine 8s linear infinite
+    }
+
+    @keyframes shine {
+      to {
+        background-position: 300% 0
+      }
+    }
+
+    .tag {
+      font-size: clamp(1.1rem, 2.4vw, 1.5rem);
+      font-weight: 600;
+      color: var(--ink)
+    }
+
+    .sub {
+      color: var(--mute);
+      margin: 14px 0 26px;
+      max-width: 520px
+    }
+
+    @media(max-width:860px) {
+      .sub {
+        margin-inline: auto
+      }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: 99px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--a), var(--b));
+      box-shadow: 0 10px 26px rgba(228, 87, 46, .35);
+      transition: transform .2s, box-shadow .2s
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.03)
+    }
+
+    .sheet {
+      position: fixed;
+      right: 16px;
+      bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+      width: min(420px, calc(100vw - 32px));
+      z-index: 50;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 20px 50px rgba(43, 45, 66, .28);
+      padding: 16px 18px 18px;
+      transform: translateY(30px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s, transform .3s
+    }
+
+    .sheet.open {
+      transform: none;
+      opacity: 1;
+      pointer-events: auto
+    }
+
+    .sheet header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      font-weight: 800
+    }
+
+    .sheet header span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .sheet button.x {
+      border: 0;
+      background: #f3ece0;
+      color: var(--ink);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1rem
+    }
+
+    .sheet .cstrEmbed>a {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap
+    }
+
+    #pstat {
+      color: var(--mute);
+      font-size: .9rem;
+      text-align: center;
+      padding: 10px 0
+    }
+
+    .btn.alt {
+      background: #fff;
+      color: var(--ink);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+      margin-left: 8px
+    }
+
+    .eq {
+      display: flex;
+      gap: 4px;
+      align-items: flex-end;
+      height: 34px;
+      margin-top: 28px
+    }
+
+    @media(max-width:860px) {
+      .eq {
+        justify-content: center
+      }
+    }
+
+    .eq i {
+      width: 6px;
+      border-radius: 4px;
+      background: linear-gradient(var(--a), var(--b));
+      height: 30%;
+      animation: bar 1s ease-in-out infinite;
+      animation-play-state: paused
+    }
+
+    .eq i:nth-child(odd) {
+      background: linear-gradient(var(--c), #7ee0d3)
+    }
+
+    @keyframes bar {
+      50% {
+        height: 100%
+      }
+    }
+
+    .playing .eq i {
+      animation-play-state: running;
+      animation-duration: .6s
+    }
+
+    .playing .disc {
+      animation-duration: 2.5s
+    }
+
+    .eq i:nth-child(2) {
+      animation-delay: .1s
+    }
+
+    .eq i:nth-child(3) {
+      animation-delay: .25s
+    }
+
+    .eq i:nth-child(4) {
+      animation-delay: .4s
+    }
+
+    .eq i:nth-child(5) {
+      animation-delay: .15s
+    }
+
+    .eq i:nth-child(6) {
+      animation-delay: .35s
+    }
+
+    .eq i:nth-child(7) {
+      animation-delay: .05s
+    }
+
+    .eq i:nth-child(8) {
+      animation-delay: .3s
+    }
+
+    .eq i:nth-child(9) {
+      animation-delay: .2s
+    }
+
+    .eq i:nth-child(10) {
+      animation-delay: .45s
+    }
+
+    .eq i:nth-child(11) {
+      animation-delay: .12s
+    }
+
+    .eq i:nth-child(12) {
+      animation-delay: .28s
+    }
+
+    .art {
+      display: grid;
+      place-items: center;
+      position: relative
+    }
+
+    .art svg {
+      width: min(430px, 86vw);
+      height: auto;
+      filter: drop-shadow(0 24px 30px rgba(43, 45, 66, .18))
+    }
+
+    .disc {
+      transform-origin: 140px 230px;
+      animation: spin 6s linear infinite
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    .float {
+      animation: fl 5s ease-in-out infinite
+    }
+
+    @keyframes fl {
+      50% {
+        transform: translateY(-14px)
+      }
+    }
+
+    .note {
+      position: absolute;
+      font-size: 2rem;
+      color: var(--a);
+      animation: rise 6s linear infinite;
+      opacity: 0
+    }
+
+    .note:nth-of-type(2) {
+      left: 15%;
+      animation-delay: -2s;
+      color: var(--c)
+    }
+
+    .note:nth-of-type(3) {
+      right: 12%;
+      animation-delay: -4s;
+      color: var(--b)
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(40px) rotate(-10deg);
+        opacity: 0
+      }
+
+      20% {
+        opacity: 1
+      }
+
+      100% {
+        transform: translateY(-220px) rotate(15deg);
+        opacity: 0
+      }
+    }
+
+    section {
+      padding: 80px 6vw
+    }
+
+    h2 {
+      font-size: clamp(1.7rem, 4vw, 2.5rem);
+      font-weight: 800;
+      text-align: center
+    }
+
+    h2+p {
+      text-align: center;
+      color: var(--mute);
+      margin: 6px auto 40px;
+      max-width: 560px
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      max-width: 1100px;
+      margin: auto
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: 0 8px 26px rgba(43, 45, 66, .06);
+      transition: transform .3s, box-shadow .3s
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 36px rgba(43, 45, 66, .12)
+    }
+
+    .ic {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-size: 1.7rem;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #ffe9d6, #fff3c9)
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 4px
+    }
+
+    .card p {
+      color: var(--mute);
+      font-size: .95rem
+    }
+
+    .contact {
+      background: linear-gradient(135deg, #fff1dc, #e3f7f3);
+      border-radius: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 60px 24px
+    }
+
+    .contact p {
+      margin: 10px auto 24px;
+      color: var(--mute);
+      max-width: 520px;
+      text-align: center
+    }
+
+    footer {
+      text-align: center;
+      padding: 36px 6vw 60px;
+      color: var(--mute);
+      font-size: .9rem
+    }
+
+    .rv {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity .8s, transform .8s
+    }
+
+    .rv.in {
+      opacity: 1;
+      transform: none
+    }
+  </style>
 </head>
+
 <body>
-<nav>
-<div class="logo"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#e4572e"/><path d="M11 20a9 9 0 0 1 18 0M15 20a5 5 0 0 1 10 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="26" r="3" fill="#fff"/></svg>නමුණුසර රේඩියෝ</div>
-<ul><li><a href="#about">අප ගැන</a></li><li><a href="#contact">අමතන්න</a></li></ul>
-</nav>
+  <nav>
+    <div class="logo"><svg viewBox="0 0 40 40">
+        <circle cx="20" cy="20" r="19" fill="#e4572e" />
+        <path d="M11 20a9 9 0 0 1 18 0M15 20a5 5 0 0 1 10 0" fill="none" stroke="#fff" stroke-width="3"
+          stroke-linecap="round" />
+        <circle cx="20" cy="26" r="3" fill="#fff" />
+      </svg>නමුණුසර රේඩියෝ</div>
+    <ul>
+      <li><a href="#about">අප ගැන</a></li>
+      <li><a href="#contact">අමතන්න</a></li>
+    </ul>
+  </nav>
 
-<header class="hero" id="top">
-<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
-<div>
-<span class="live"><span class="dot"></span>සජීවී ගුවන්විදුලිය</span>
-<h1>නමුණුසර රේඩියෝ</h1>
-<p class="tag">සවන් සනහන සරසවි ගුවන්විදුලිය</p>
-<p class="sub">සරසවි පරිශ්‍රයේ හදගැස්ම, ඔබේ දුරකථනයටම. අපේ නිවේදකයන් සජීවීව ගෙන එන ගීත, කතාබහ සහ විනෝදය දවස පුරා රස විඳින්න.</p>
-<button class="btn" id="listen" type="button"><span id="bi">▶</span><span id="bt">සජීවීව අහන්න</span></button><a class="btn alt" href="#about" style="text-decoration:none">අප ගැන</a>
-<div class="eq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-</div>
-<div class="art">
-<span class="note">♪</span><span class="note">♫</span><span class="note">♬</span>
-<svg viewBox="0 0 400 400" class="float" aria-hidden="true">
-<rect x="40" y="90" width="320" height="230" rx="38" fill="#fff" stroke="#2b2d42" stroke-width="6"/>
-<rect x="40" y="90" width="320" height="60" rx="38" fill="#f6a82c"/>
-<path d="M300 90 L350 20" stroke="#2b2d42" stroke-width="6" stroke-linecap="round"/><circle cx="352" cy="18" r="9" fill="#e4572e"/>
-<circle cx="140" cy="230" r="70" fill="#fff3dd" stroke="#2b2d42" stroke-width="5"/>
-<g class="disc"><circle cx="140" cy="230" r="58" fill="#2b2d42"/><circle cx="140" cy="230" r="44" fill="none" stroke="#555a78" stroke-width="2"/><circle cx="140" cy="230" r="30" fill="none" stroke="#555a78" stroke-width="2"/><circle cx="140" cy="230" r="20" fill="#e4572e"/><circle cx="140" cy="230" r="4" fill="#fff"/><path d="M140 172a58 58 0 0 1 40 18" stroke="#fff" stroke-opacity=".5" stroke-width="4" fill="none"/></g>
-<rect x="232" y="180" width="102" height="34" rx="10" fill="#e3f7f3" stroke="#2b2d42" stroke-width="4"/><path d="M242 197h12l6-9 8 18 7-12h10" fill="none" stroke="#1b998b" stroke-width="3" stroke-linecap="round"/>
-<circle cx="256" cy="256" r="18" fill="#e4572e" stroke="#2b2d42" stroke-width="4"/><circle cx="310" cy="256" r="18" fill="#1b998b" stroke="#2b2d42" stroke-width="4"/>
-<rect x="232" y="284" width="102" height="8" rx="4" fill="#2b2d42" opacity=".2"/>
-<text x="200" y="130" text-anchor="middle" font-size="26" font-weight="800" fill="#2b2d42" font-family="Poppins,sans-serif">FM · LIVE</text>
-</svg>
-</div>
-</header>
+  <header class="hero" id="top">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div>
+      <span class="live"><span class="dot"></span>සජීවී ගුවන්විදුලිය</span>
+      <h1>නමුණුසර රේඩියෝ</h1>
+      <p class="tag">සවන් සනහන සරසවි ගුවන්විදුලිය</p>
+      <p class="sub">සරසවි පරිශ්‍රයේ හදගැස්ම, ඔබේ දුරකථනයටම. අපේ නිවේදකයන් සජීවීව ගෙන එන ගීත, කතාබහ සහ විනෝදය දවස පුරා
+        රස විඳින්න.</p>
+      <button class="btn" id="listen" type="button"><span id="bi">▶</span><span id="bt">සජීවීව අහන්න</span></button><a
+        class="btn alt" href="#about" style="text-decoration:none">අප ගැන</a>
+      <div class="eq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="art">
+      <span class="note">♪</span><span class="note">♫</span><span class="note">♬</span>
+      <svg viewBox="0 0 400 400" class="float" aria-hidden="true">
+        <rect x="40" y="90" width="320" height="230" rx="38" fill="#fff" stroke="#2b2d42" stroke-width="6" />
+        <rect x="40" y="90" width="320" height="60" rx="38" fill="#f6a82c" />
+        <path d="M300 90 L350 20" stroke="#2b2d42" stroke-width="6" stroke-linecap="round" />
+        <circle cx="352" cy="18" r="9" fill="#e4572e" />
+        <circle cx="140" cy="230" r="70" fill="#fff3dd" stroke="#2b2d42" stroke-width="5" />
+        <g class="disc">
+          <circle cx="140" cy="230" r="58" fill="#2b2d42" />
+          <circle cx="140" cy="230" r="44" fill="none" stroke="#555a78" stroke-width="2" />
+          <circle cx="140" cy="230" r="30" fill="none" stroke="#555a78" stroke-width="2" />
+          <circle cx="140" cy="230" r="20" fill="#e4572e" />
+          <circle cx="140" cy="230" r="4" fill="#fff" />
+          <path d="M140 172a58 58 0 0 1 40 18" stroke="#fff" stroke-opacity=".5" stroke-width="4" fill="none" />
+        </g>
+        <rect x="232" y="180" width="102" height="34" rx="10" fill="#e3f7f3" stroke="#2b2d42" stroke-width="4" />
+        <path d="M242 197h12l6-9 8 18 7-12h10" fill="none" stroke="#1b998b" stroke-width="3" stroke-linecap="round" />
+        <circle cx="256" cy="256" r="18" fill="#e4572e" stroke="#2b2d42" stroke-width="4" />
+        <circle cx="310" cy="256" r="18" fill="#1b998b" stroke="#2b2d42" stroke-width="4" />
+        <rect x="232" y="284" width="102" height="8" rx="4" fill="#2b2d42" opacity=".2" />
+        <text x="200" y="130" text-anchor="middle" font-size="26" font-weight="800" fill="#2b2d42"
+          font-family="Poppins,sans-serif">FM · LIVE</text>
+      </svg>
+    </div>
+  </header>
 
-<section id="about">
-<div class="grid">
-<div class="card rv"><div class="ic">🎶</div><h3>සජීවී සංගීතය</h3><p>ඔබ කැමති සිංහල, ඉංග්‍රීසි සහ හින්දි ගීත, නිවේදකයන් සජීවීව ධාවනය කරයි.</p></div>
-<div class="card rv"><div class="ic">🎓</div><h3>සරසවි කතා</h3><p>සරසවි පරිශ්‍රයේ සිදුවීම්, සිසුන්ගේ කතන්දර සහ විශේෂ සම්මුඛ සාකච්ඡා.</p></div>
-<div class="card rv"><div class="ic">💌</div><h3>ගීත ඉල්ලීම්</h3><p>ඔබේ ප්‍රිය ගීතයක් ඉල්ලන්න, මිතුරන්ට සුබ පැතුම් යවන්න.</p></div>
-<div class="card rv"><div class="ic">📱</div><h3>ඕනෑම තැනක සිට</h3><p>දුරකථනය, ටැබ් හෝ පරිගණකයෙන් නොමිලේ සවන් දෙන්න.</p></div>
-</div>
-</section>
+  <section id="about">
+    <div class="grid">
+      <div class="card rv">
+        <div class="ic">🎶</div>
+        <h3>සජීවී සංගීතය</h3>
+        <p>ඔබ කැමති සිංහල, ඉංග්‍රීසි සහ හින්දි ගීත, නිවේදකයන් සජීවීව ධාවනය කරයි.</p>
+      </div>
+      <div class="card rv">
+        <div class="ic">🎓</div>
+        <h3>සරසවි කතා</h3>
+        <p>සරසවි පරිශ්‍රයේ සිදුවීම්, සිසුන්ගේ කතන්දර සහ විශේෂ සම්මුඛ සාකච්ඡා.</p>
+      </div>
+      <div class="card rv">
+        <div class="ic">💌</div>
+        <h3>ගීත ඉල්ලීම්</h3>
+        <p>ඔබේ ප්‍රිය ගීතයක් ඉල්ලන්න, මිතුරන්ට සුබ පැතුම් යවන්න.</p>
+      </div>
+      <div class="card rv">
+        <div class="ic">📱</div>
+        <h3>ඕනෑම තැනක සිට</h3>
+        <p>දුරකථනය, ටැබ් හෝ පරිගණකයෙන් නොමිලේ සවන් දෙන්න.</p>
+      </div>
+    </div>
+  </section>
 
-<section id="contact">
-<div class="contact rv">
-<h2>ගීතයක් ඉල්ලන්න 💌</h2>
-<p>ඔබේ ප්‍රිය ගීතය හෝ සුබ පැතුම අපට එවන්න.</p>
-<form id="rq" style="max-width:420px;margin:0 auto;display:grid;gap:12px">
-<input id="rn" required placeholder="ඔබේ නම" style="padding:14px 18px;border-radius:18px;border:1px solid var(--line);font:inherit;background:#fff;color:var(--ink)">
-<textarea id="rm" required rows="3" placeholder="ඔබේ ප්‍රිය ගීතය හෝ සුබ පැතුම..." style="padding:14px 18px;border-radius:18px;border:1px solid var(--line);font:inherit;background:#fff;color:var(--ink);resize:vertical"></textarea>
-<button class="btn" type="submit" style="justify-content:center">පණිවිඩයක් එවන්න</button>
-</form>
-</div>
-</section>
+  <section id="contact">
+    <div class="contact rv">
+      <h2>ගීතයක් ඉල්ලන්න 💌</h2>
+      <p>ඔබේ ප්‍රිය ගීතය හෝ සුබ පැතුම අපට එවන්න.</p>
+      <form id="rq" style="max-width:420px;margin:0 auto;display:grid;gap:12px">
+        <input id="rn" required placeholder="ඔබේ නම"
+          style="padding:14px 18px;border-radius:18px;border:1px solid var(--line);font:inherit;background:#fff;color:var(--ink)">
+        <textarea id="rm" required rows="3" placeholder="ඔබේ ප්‍රිය ගීතය හෝ සුබ පැතුම..."
+          style="padding:14px 18px;border-radius:18px;border:1px solid var(--line);font:inherit;background:#fff;color:var(--ink);resize:vertical"></textarea>
+        <button class="btn" type="submit" style="justify-content:center">පණිවිඩයක් එවන්න</button>
+      </form>
+    </div>
+  </section>
 
-<footer>© 2026 නමුණුසර රේඩියෝ · සවන් සනහන සරසවි ගුවන්විදුලිය</footer>
+  <footer>© 2026 නමුණුසර රේඩියෝ · සවන් සනහන සරසවි ගුවන්විදුලිය</footer>
 
-<div class="sheet" id="sheet" role="dialog" aria-label="සජීවී ගුවන්විදුලිය">
-<header><span><i class="dot"></i>සජීවීව අහන්න</span><button class="x" id="sx" type="button" aria-label="වසන්න">✕</button></header>
-<div id="pbox"></div>
-<p id="pstat">Player එක load වෙමින් පවතී...</p>
-</div>
-<script>
-var sheet=document.getElementById('sheet'),pbox=document.getElementById('pbox'),pstat=document.getElementById('pstat'),loaded=false;
-function loadPlayer(){
-  loaded=true;
-  pbox.innerHTML='<div data-type="newStreamPlayer" data-publicToken="bd80f42b-58b7-4438-8b3f-8af88ce4e1ea" data-theme="light" data-color="e81e4d" data-channelId="" data-rendered="false" class="cstrEmbed"><a href="https://www.caster.fm">Shoutcast Hosting</a> <a href="https://www.caster.fm">Stream Hosting</a> <a href="https://www.caster.fm">Radio Server Hosting</a></div>';
-  var sc=document.createElement('script');sc.src='https://cdn.cloud.caster.fm/widgets/embed.js';
-  sc.onerror=function(){pstat.textContent='Player එක load කරගන්න බැරි වුණා. Internet සම්බන්ධතාවය බලන්න.';};
-  document.body.appendChild(sc);
-  var t=0,iv=setInterval(function(){
-    t+=500;var e=pbox.querySelector('.cstrEmbed');
-    var ready=e&&(e.getAttribute('data-rendered')==='true'||e.querySelector('iframe,audio,button,canvas,svg'));
-    if(ready){pstat.style.display='none';clearInterval(iv);}
-    else if(t>=8000){pstat.textContent='Player එක පෙන්වන්න බැරි වුණා. පිටුව refresh කරලා නැවත උත්සාහ කරන්න.';clearInterval(iv);}
-  },500);
-}
-// Direct stream link (Caster.fm panel -> stream URL). If filled, the site uses its own player.
-var STREAM_URL="";
-var bi=document.getElementById('bi'),bt=document.getElementById('bt'),own=null;
-function setPlaying(on){
-  document.body.classList.toggle('playing',on);
-  if(own){bi.textContent=on?'⏸':'▶';bt.textContent=on?'නවත්වන්න':'සජීවීව අහන්න';}
-}
-// Bars move only when an audio element is REALLY playing (not just buffering/failed).
-function hook(a){
-  if(a._h)return;a._h=true;
-  a.addEventListener('playing',function(){setPlaying(true);});
-  ['pause','waiting','ended','error','emptied','stalled'].forEach(function(ev){
-    a.addEventListener(ev,function(){setPlaying(false);});
-  });
-}
-var _play=HTMLMediaElement.prototype.play;
-HTMLMediaElement.prototype.play=function(){hook(this);return _play.apply(this,arguments);};
-['playing','pause','waiting','ended','error','emptied','stalled'].forEach(function(ev){
-  document.addEventListener(ev,function(e){
-    if(e.target&&e.target.tagName==='AUDIO'&&e.target!==own)setPlaying(ev==='playing');
-  },true);
-});
-document.getElementById('listen').onclick=function(){
-  if(STREAM_URL){
-    if(!own){own=new Audio();own.preload='none';}
-    if(own.paused){
-      bt.textContent='සම්බන්ධ වෙමින්...';
-      own.src=STREAM_URL;
-      own.play().catch(function(){bt.textContent='සම්බන්ධ විය නොහැක';setPlaying(false);bi.textContent='▶';});
-    }else{own.pause();own.removeAttribute('src');own.load();setPlaying(false);}
-    return;
-  }
-  sheet.classList.add('open');
-  if(!loaded)loadPlayer();
-};
-document.getElementById('sx').onclick=function(){sheet.classList.remove('open');};
-document.addEventListener('keydown',function(e){if(e.key==='Escape')sheet.classList.remove('open');});
-document.getElementById('rq').onsubmit=function(e){e.preventDefault();var n=document.getElementById('rn').value.trim(),m=document.getElementById('rm').value.trim();var u='https://mail.google.com/mail/?view=cm&fs=1&to=namunusararadio123@gmail.com&su='+encodeURIComponent('ගීත ඉල්ලීමක් / සුබ පැතුමක්')+'&body='+encodeURIComponent(m+'\n\n— '+n);window.open(u,'_blank');};
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.15});
-document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=(i%4)*90+'ms';io.observe(el);});
-</script>
+  <div class="sheet" id="sheet" role="dialog" aria-label="සජීවී ගුවන්විදුලිය">
+    <header><span><i class="dot"></i>සජීවීව අහන්න</span><button class="x" id="sx" type="button"
+        aria-label="වසන්න">✕</button></header>
+    <div id="pbox"></div>
+    <p id="pstat">Player එක load වෙමින් පවතී...</p>
+  </div>
+  <script>
+    var sheet = document.getElementById('sheet'), pbox = document.getElementById('pbox'), pstat = document.getElementById('pstat'), loaded = false;
+    function loadPlayer() {
+      loaded = true;
+      pbox.innerHTML = '<div data-type="newStreamPlayer" data-publicToken="bd80f42b-58b7-4438-8b3f-8af88ce4e1ea" data-theme="light" data-color="e81e4d" data-channelId="" data-rendered="false" class="cstrEmbed"><a href="https://www.caster.fm">Shoutcast Hosting</a> <a href="https://www.caster.fm">Stream Hosting</a> <a href="https://www.caster.fm">Radio Server Hosting</a></div>';
+      var sc = document.createElement('script'); sc.src = 'https://cdn.cloud.caster.fm/widgets/embed.js';
+      sc.onerror = function () { pstat.textContent = 'Player එක load කරගන්න බැරි වුණා. Internet සම්බන්ධතාවය බලන්න.'; };
+      document.body.appendChild(sc);
+      var t = 0, iv = setInterval(function () {
+        t += 500; var e = pbox.querySelector('.cstrEmbed');
+        var ready = e && (e.getAttribute('data-rendered') === 'true' || e.querySelector('iframe,audio,button,canvas,svg'));
+        if (ready) { pstat.style.display = 'none'; clearInterval(iv); }
+        else if (t >= 8000) { pstat.textContent = 'Player එක පෙන්වන්න බැරි වුණා. පිටුව refresh කරලා නැවත උත්සාහ කරන්න.'; clearInterval(iv); }
+      }, 500);
+    }
+    // Direct stream link (Caster.fm panel -> stream URL). If filled, the site uses its own player.
+    var STREAM_URL = "";
+    var bi = document.getElementById('bi'), bt = document.getElementById('bt'), own = null;
+    function setPlaying(on) {
+      document.body.classList.toggle('playing', on);
+      if (own) { bi.textContent = on ? '⏸' : '▶'; bt.textContent = on ? 'නවත්වන්න' : 'සජීවීව අහන්න'; }
+    }
+    // Bars move only when an audio element is REALLY playing (not just buffering/failed).
+    function hook(a) {
+      if (a._h) return; a._h = true;
+      a.addEventListener('playing', function () { setPlaying(true); });
+      ['pause', 'waiting', 'ended', 'error', 'emptied', 'stalled'].forEach(function (ev) {
+        a.addEventListener(ev, function () { setPlaying(false); });
+      });
+    }
+    var _play = HTMLMediaElement.prototype.play;
+    HTMLMediaElement.prototype.play = function () { hook(this); return _play.apply(this, arguments); };
+    ['playing', 'pause', 'waiting', 'ended', 'error', 'emptied', 'stalled'].forEach(function (ev) {
+      document.addEventListener(ev, function (e) {
+        if (e.target && e.target.tagName === 'AUDIO' && e.target !== own) setPlaying(ev === 'playing');
+      }, true);
+    });
+    document.getElementById('listen').onclick = function () {
+      if (STREAM_URL) {
+        if (!own) { own = new Audio(); own.preload = 'none'; }
+        if (own.paused) {
+          bt.textContent = 'සම්බන්ධ වෙමින්...';
+          own.src = STREAM_URL;
+          own.play().catch(function () { bt.textContent = 'සම්බන්ධ විය නොහැක'; setPlaying(false); bi.textContent = '▶'; });
+        } else { own.pause(); own.removeAttribute('src'); own.load(); setPlaying(false); }
+        return;
+      }
+      sheet.classList.add('open');
+      if (!loaded) loadPlayer();
+    };
+    document.getElementById('sx').onclick = function () { sheet.classList.remove('open'); };
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') sheet.classList.remove('open'); });
+    document.getElementById('rq').onsubmit = function (e) { e.preventDefault(); var n = document.getElementById('rn').value.trim(), m = document.getElementById('rm').value.trim(); var u = 'https://mail.google.com/mail/?view=cm&fs=1&to=namunusararadio123@gmail.com&su=' + encodeURIComponent('ගීත ඉල්ලීමක් / සුබ පැතුමක්') + '&body=' + encodeURIComponent(m + '\n\n— ' + n); window.open(u, '_blank'); };
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .15 });
+    document.querySelectorAll('.rv').forEach(function (el, i) { el.style.transitionDelay = (i % 4) * 90 + 'ms'; io.observe(el); });
+  </script>
 </body>
+
 </html>
